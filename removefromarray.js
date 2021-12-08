@@ -1,13 +1,16 @@
-const removeFromArray = function(stringArray, num1, num2, num3, num4) {
+const removeFromArray = function(stringArray, ...num) {
+
+
     for (let i = 0; i < stringArray.length; i++) {
 
-        if (stringArray[i] === num1 || stringArray[i] === num2 ||stringArray[i] === num3 ||stringArray[i] === num4) {
+        if (stringArray[i] == num[i]) {
+            console.log(`${typeof num[i]}`)
             stringArray.splice(i,1);
-            return stringArray;
+            
         } 
-        
+
     }
 };
 let example = ['Hey','Hey2','Hey3','Hey4','Hey5'];
 
-console.log(removeFromArray(example, "Hey4"))
+console.log(removeFromArray(example, "Hey4", "Hey3"))

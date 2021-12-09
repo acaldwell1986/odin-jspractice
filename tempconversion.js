@@ -1,13 +1,14 @@
 const ftoc = function(F) {
-    let C = (F -32) * (5/9);
-    return C.toFixed(1);
-
+    let C = (F - 32) * (5/9);
+    C = Math.round(C * 10) / 10;
+    return C;
+    
+    
 };
-
 const ctof = function(C) {
     let F = (C * (9/5) + 32)
-    return F.toFixed(1);
+    F = Math.round (F * 10) / 10;
+    return F;
 };
 
-console.log(ftoc(100))
-console.log(ctof(0))
+

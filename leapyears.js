@@ -11,6 +11,5 @@ function leapYears(year) {
     else {
         return false;
     }
-    
 }
 

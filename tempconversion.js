@@ -9,5 +9,4 @@ const ctof = function(C) {
     return F.toFixed(1);
 };
 
-console.log(ftoc(100))
-console.log(ctof(0))
+    
